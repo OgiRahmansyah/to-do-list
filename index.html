@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Ogi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <table id="todoTable" class="todo-table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="todoList">
+            </tbody>
+        </table>
+
+        <button id="addTodoBtn" class="add-todo-btn">Add Todo</button>
+
+
+        <div id="emptyState" class="empty-state">empty state</div>
+
+        <div id="todoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2 id="modalTitle">Add Todo</h2>
+                <form id="todoForm">
+                    <input type="hidden" id="todoId">
+                    <input type="text" id="todoInput" placeholder="Enter your todo" required>
+                    <button type="submit" class="add-btn">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
